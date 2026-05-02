@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# 🚀 EmoTrack – AI-Based Emotion Tracking & Mental Wellness System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EmoTrack is a full-stack web application that analyzes user emotions using AI and provides structured mental wellness support through tracking, recovery workflows, and therapist integration.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 💡 Overview
 
-### `npm start`
+EmoTrack goes beyond basic emotion detection by building a complete pipeline:
+**multi-modal input → AI analysis → structured insights → recovery tracking → therapist support**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+* 🎯 **Multi-Modal Input**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * Accepts text, audio, and video input
+  * Converts audio/video to text using speech recognition
 
-### `npm run build`
+* 🤖 **AI Emotion Analysis**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * Uses DeepSeek LLM (via Ollama API)
+  * Detects:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    * Emotion
+    * Stress Level
+    * Emotion Severity
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* 📊 **Structured Insights**
 
-### `npm run eject`
+  * Personalized Do’s and Don’ts
+  * Journaling prompts
+  * Motivational quotes
+  * Breathing exercises & meditation suggestions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* 📅 **10-Day Recovery Tracker**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * Automatically triggered for medium/high stress
+  * Provides daily:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    * Tips
+    * Relaxation music
+    * Meditation content
+    * Journaling prompts
+  * Tracks user progress over time
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* 🧑‍⚕️ **Therapist Support System**
 
-## Learn More
+  * Browse therapists
+  * Book sessions (online/offline)
+  * Chat and session history
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* 🔐 **Authentication & Security**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  * JWT-based authentication
+  * User session tracking
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Tech Stack
 
-### Analyzing the Bundle Size
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Python
+* Django
+* Django REST Framework
 
-### Making a Progressive Web App
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* React.js
+* Tailwind CSS
 
-### Advanced Configuration
+### AI & Processing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* DeepSeek LLM (Ollama API)
+* SpeechRecognition (Google Web Speech API)
 
-### Deployment
+### Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* SQLite
 
-### `npm run build` fails to minify
+### Authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* JWT (JSON Web Tokens)
+
+---
+
+## ⚙️ Installation & Setup
+
+### 2. Backend setup
+
+```
+cd backend
+pip install -r requirements.txt
+python manage.py runserver
+```
+
+---
+
+### 3. Frontend setup
+
+```
+cd frontend
+npm install
+npm start
+```
+
+---
+
+## 🎯 Key Highlights
+
+* Designed a **complete backend pipeline** for emotion analysis and recovery tracking
+* Integrated **LLM-based AI analysis** with structured outputs
+* Built scalable REST APIs for real-time interaction
+* Combined **AI + user tracking + therapist system** in one platform
+
+---
+
+
+## 🤝 Contributing
+
+Contributions are welcome. Feel free to fork the repository and submit a pull request.
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
